@@ -1,0 +1,6 @@
+timestamp,case_id,ai_diagnosis,human_decision,human_corrected_root_cause,reviewer_notes,reviewer
+,NET-004,OSPF Hello Timer Mismatch,,,,
+,NET-005,Extended ACL blocking HTTP traffic,,,,
+,NET-017,NAT interface direction missing on internal interface,,,,
+,NET-025,Uplink trunk port not configured as DAI trusted,,,,
+,NET-029,IPv6 Router Advertisements (RA) suppressed,,,,
