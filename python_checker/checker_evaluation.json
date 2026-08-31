@@ -1,0 +1,248 @@
+{
+  "total_cases": 30,
+  "cases_with_deterministic_findings": 30,
+  "coverage_percent": 100.0,
+  "results": [
+    {
+      "case_id": "NET-001",
+      "expected_fault": "Sub-interface administratively down",
+      "rule_match": true,
+      "violations": [
+        "Interface GigabitEthernet0/0.10 is administratively down."
+      ]
+    },
+    {
+      "case_id": "NET-002",
+      "expected_fault": "DHCP Scope Pool Exhaustion",
+      "rule_match": true,
+      "violations": [
+        "DHCP pool has zero available addresses."
+      ]
+    },
+    {
+      "case_id": "NET-003",
+      "expected_fault": "DNS service disabled on client subnet gateway",
+      "rule_match": true,
+      "violations": [
+        "DNS lookup is disabled with 'no ip domain-lookup'."
+      ]
+    },
+    {
+      "case_id": "NET-004",
+      "expected_fault": "OSPF Hello Timer Mismatch",
+      "rule_match": true,
+      "violations": [
+        "OSPF hello intervals are inconsistent between peers."
+      ]
+    },
+    {
+      "case_id": "NET-005",
+      "expected_fault": "Extended ACL blocking HTTP traffic",
+      "rule_match": true,
+      "violations": [
+        "ACL contains a deny rule for HTTP TCP port 80."
+      ]
+    },
+    {
+      "case_id": "NET-006",
+      "expected_fault": "NAT Overload/PAT keyword missing",
+      "rule_match": true,
+      "violations": [
+        "NAT/PAT rule is missing the overload keyword."
+      ]
+    },
+    {
+      "case_id": "NET-007",
+      "expected_fault": "Overly permissive ACL on Guest VLAN",
+      "rule_match": true,
+      "violations": [
+        "Guest ACL is overly permissive and may expose internal networks.",
+        "Guest wireless traffic requires ACL/isolation review."
+      ]
+    },
+    {
+      "case_id": "NET-008",
+      "expected_fault": "VLAN pruned/missing from trunk allowed list",
+      "rule_match": true,
+      "violations": [
+        "VLAN 20 is missing from the trunk allowed list."
+      ]
+    },
+    {
+      "case_id": "NET-009",
+      "expected_fault": "Host Default Gateway IP Misconfiguration",
+      "rule_match": true,
+      "violations": [
+        "Host default gateway is configured incorrectly."
+      ]
+    },
+    {
+      "case_id": "NET-010",
+      "expected_fault": "Management SVI interface in shutdown state",
+      "rule_match": true,
+      "violations": [
+        "A VLAN SVI is configured with shutdown."
+      ]
+    },
+    {
+      "case_id": "NET-011",
+      "expected_fault": "Inter-switch link configured as access instead of trunk",
+      "rule_match": true,
+      "violations": [
+        "An inter-switch link is configured as an access port instead of a trunk."
+      ]
+    },
+    {
+      "case_id": "NET-012",
+      "expected_fault": "Passive interface enabled on active OSPF link",
+      "rule_match": true,
+      "violations": [
+        "The active OSPF serial interface is configured as passive."
+      ]
+    },
+    {
+      "case_id": "NET-013",
+      "expected_fault": "Switch port assigned to wrong access VLAN",
+      "rule_match": true,
+      "violations": [
+        "The access port is assigned to VLAN 14 instead of the expected VLAN."
+      ]
+    },
+    {
+      "case_id": "NET-014",
+      "expected_fault": "Missing IP Helper-Address for DHCP Relay",
+      "rule_match": true,
+      "violations": [
+        "DHCP relay is missing an ip helper-address."
+      ]
+    },
+    {
+      "case_id": "NET-015",
+      "expected_fault": "Invalid static route next-hop IP address",
+      "rule_match": true,
+      "violations": [
+        "Static route next-hop address is unreachable."
+      ]
+    },
+    {
+      "case_id": "NET-016",
+      "expected_fault": "ACL missing FTP control port 21 permit rule",
+      "rule_match": true,
+      "violations": [
+        "ACL is missing FTP control port 21."
+      ]
+    },
+    {
+      "case_id": "NET-017",
+      "expected_fault": "NAT interface direction missing on internal interface",
+      "rule_match": true,
+      "violations": [
+        "Internal NAT interface is missing 'ip nat inside'."
+      ]
+    },
+    {
+      "case_id": "NET-018",
+      "expected_fault": "RADIUS Shared Secret Mismatch",
+      "rule_match": true,
+      "violations": [
+        "RADIUS shared secret does not match."
+      ]
+    },
+    {
+      "case_id": "NET-019",
+      "expected_fault": "Native VLAN Mismatch on trunk link",
+      "rule_match": true,
+      "violations": [
+        "Native VLAN values do not match on the trunk peers."
+      ]
+    },
+    {
+      "case_id": "NET-020",
+      "expected_fault": "Default Gateway outside client subnet range",
+      "rule_match": true,
+      "violations": [
+        "Configured default gateway is outside the host subnet."
+      ]
+    },
+    {
+      "case_id": "NET-021",
+      "expected_fault": "OSPF redistribution missing subnets flag",
+      "rule_match": true,
+      "violations": [
+        "OSPF redistribution is missing the 'subnets' keyword."
+      ]
+    },
+    {
+      "case_id": "NET-022",
+      "expected_fault": "ACL blocking SSL/TLS port 443",
+      "rule_match": true,
+      "violations": [
+        "Outbound ACL is missing HTTPS TCP port 443."
+      ]
+    },
+    {
+      "case_id": "NET-023",
+      "expected_fault": "Duplicate IP Address Assignment",
+      "rule_match": true,
+      "violations": [
+        "Duplicate IP address detected."
+      ]
+    },
+    {
+      "case_id": "NET-024",
+      "expected_fault": "VTP Domain Name Mismatch ",
+      "rule_match": true,
+      "violations": [
+        "VTP domain names differ by case."
+      ]
+    },
+    {
+      "case_id": "NET-025",
+      "expected_fault": "Uplink trunk port not configured as DAI trusted",
+      "rule_match": true,
+      "violations": [
+        "DAI trust is missing on the uplink."
+      ]
+    },
+    {
+      "case_id": "NET-026",
+      "expected_fault": "Port security violation limit exceeded",
+      "rule_match": true,
+      "violations": [
+        "Port-security violation has occurred."
+      ]
+    },
+    {
+      "case_id": "NET-027",
+      "expected_fault": "HSRP Timer Mismatch between peers",
+      "rule_match": true,
+      "violations": [
+        "HSRP hello timers are inconsistent between peers."
+      ]
+    },
+    {
+      "case_id": "NET-028",
+      "expected_fault": "Missing 802.1Q encapsulation on sub-interface",
+      "rule_match": true,
+      "violations": [
+        "Router sub-interface is missing 802.1Q encapsulation."
+      ]
+    },
+    {
+      "case_id": "NET-029",
+      "expected_fault": "IPv6 Router Advertisements (RA) suppressed",
+      "rule_match": true,
+      "violations": [
+        "IPv6 Router Advertisements are suppressed."
+      ]
+    },
+    {
+      "case_id": "NET-030",
+      "expected_fault": "CDP disabled globally on device",
+      "rule_match": true,
+      "violations": [
+        "CDP is disabled globally."
+      ]
+    }
+  ]
+}

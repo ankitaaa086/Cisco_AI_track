@@ -1,0 +1,31 @@
+case_id,expected_fault,rule_match,violations
+NET-001,Sub-interface administratively down,True,Interface GigabitEthernet0/0.10 is administratively down.
+NET-002,DHCP Scope Pool Exhaustion,True,DHCP pool has zero available addresses.
+NET-003,DNS service disabled on client subnet gateway,True,DNS lookup is disabled with 'no ip domain-lookup'.
+NET-004,OSPF Hello Timer Mismatch,True,OSPF hello intervals are inconsistent between peers.
+NET-005,Extended ACL blocking HTTP traffic,True,ACL contains a deny rule for HTTP TCP port 80.
+NET-006,NAT Overload/PAT keyword missing,True,NAT/PAT rule is missing the overload keyword.
+NET-007,Overly permissive ACL on Guest VLAN,True,Guest ACL is overly permissive and may expose internal networks. | Guest wireless traffic requires ACL/isolation review.
+NET-008,VLAN pruned/missing from trunk allowed list,True,VLAN 20 is missing from the trunk allowed list.
+NET-009,Host Default Gateway IP Misconfiguration,True,Host default gateway is configured incorrectly.
+NET-010,Management SVI interface in shutdown state,True,A VLAN SVI is configured with shutdown.
+NET-011,Inter-switch link configured as access instead of trunk,True,An inter-switch link is configured as an access port instead of a trunk.
+NET-012,Passive interface enabled on active OSPF link,True,The active OSPF serial interface is configured as passive.
+NET-013,Switch port assigned to wrong access VLAN,True,The access port is assigned to VLAN 14 instead of the expected VLAN.
+NET-014,Missing IP Helper-Address for DHCP Relay,True,DHCP relay is missing an ip helper-address.
+NET-015,Invalid static route next-hop IP address,True,Static route next-hop address is unreachable.
+NET-016,ACL missing FTP control port 21 permit rule,True,ACL is missing FTP control port 21.
+NET-017,NAT interface direction missing on internal interface,True,Internal NAT interface is missing 'ip nat inside'.
+NET-018,RADIUS Shared Secret Mismatch,True,RADIUS shared secret does not match.
+NET-019,Native VLAN Mismatch on trunk link,True,Native VLAN values do not match on the trunk peers.
+NET-020,Default Gateway outside client subnet range,True,Configured default gateway is outside the host subnet.
+NET-021,OSPF redistribution missing subnets flag,True,OSPF redistribution is missing the 'subnets' keyword.
+NET-022,ACL blocking SSL/TLS port 443,True,Outbound ACL is missing HTTPS TCP port 443.
+NET-023,Duplicate IP Address Assignment,True,Duplicate IP address detected.
+NET-024,VTP Domain Name Mismatch ,True,VTP domain names differ by case.
+NET-025,Uplink trunk port not configured as DAI trusted,True,DAI trust is missing on the uplink.
+NET-026,Port security violation limit exceeded,True,Port-security violation has occurred.
+NET-027,HSRP Timer Mismatch between peers,True,HSRP hello timers are inconsistent between peers.
+NET-028,Missing 802.1Q encapsulation on sub-interface,True,Router sub-interface is missing 802.1Q encapsulation.
+NET-029,IPv6 Router Advertisements (RA) suppressed,True,IPv6 Router Advertisements are suppressed.
+NET-030,CDP disabled globally on device,True,CDP is disabled globally.
